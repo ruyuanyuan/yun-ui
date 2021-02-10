@@ -43,6 +43,9 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        options: {
+          plugins: ['syntax-dynamic-import']
+        },
         loader: 'babel-loader',
         exclude: /node_modules/
       },

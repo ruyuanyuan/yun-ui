@@ -9,13 +9,13 @@ function resolve(dir) {
 module.exports = {
   entry: {
     style: './src/plugin/style.js',
-    vzer: './src/plugin/index.js', //出口文件(vzer.js)必须与pakage.json中的main相同；
+    yuni: './src/plugin/index.js', //出口文件(yuni.js)必须与pakage.json中的main相同；
   },
   output: {
     path: resolve("lib"),
     publicPath: '/lib/',
     filename: '[name].js',
-    library: 'vzer',
+    library: 'yuni',
     libraryTarget: 'umd'
   },
   module: {
@@ -84,7 +84,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
-    new ExtractTextPlugin("vzer.css", {
+    new ExtractTextPlugin("yuni.css", {
       allChunks: true
     }),
     new webpack.DefinePlugin({

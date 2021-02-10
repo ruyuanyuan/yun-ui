@@ -1,18 +1,15 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-
-import '@/plugin/assets/scss/index.scss'
-import Vzer from '@/plugin'
-Vue.use(Vzer)
-
-import '@/assets/css/base.css'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import '@/assets/css/public.css';
+import Yuni from 'yuni-ui'
+import 'yuni-ui/lib/yuni.css'
+Vue.use(Yuni)
+Vue.config.productionTip = false;
 
 new Vue({
-  el: '#app',
   router,
-  components: {
-    App
-  },
-  template: '<App/>',
-})
+  store,
+  render: (h) => h(App),
+}).$mount('#app');
