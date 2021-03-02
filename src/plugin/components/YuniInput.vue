@@ -11,6 +11,7 @@
 </template>
 <script>
 export default {
+    name:'yuni-input',
     props:{
         width:{
             type:[String,Number],

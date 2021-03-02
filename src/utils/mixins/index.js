@@ -1,5 +1,0 @@
-const input = {},
-
-  export {
-    input
-  }

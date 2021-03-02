@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+  name:'yuni-header',
   props: {
     fixedScroll: {
       type: Number,

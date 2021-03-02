@@ -23,7 +23,7 @@
 </template>
 <script>
 export default {
-  name: "yuni-button-linear",
+  name: "yuni-button",
   props: {
     color:{
       type:String,
