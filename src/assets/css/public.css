@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+.page-title{
+    font-size:20px;
+    color:#000;
+    line-height: 40px;
+}
+.yuni-code{
+  padding:20px;
+  line-height: 24px;
+}
+.yuni-pre{
+  background:#ddd;
+}
+.yuni-table{
+  width:100%;
+}
+.yuni-table th{
+  text-align: left;
+  color:#666;
+  font-size:16px;
+}
+.yuni-table tr td{
+  color:#444;
+  border-bottom:1px solid #ddd;
+  padding:10px 10px;
+  font-size:14px;
+}
